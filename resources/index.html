@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valubre Resources</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 45%, #EFF6FF 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 760px;
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid rgba(100, 116, 139, 0.15);
+      border-radius: 24px;
+      padding: 60px 48px;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.18), transparent 70%);
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.16), transparent 70%);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.1);
+      color: #2563EB;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 44px;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #64748B;
+      max-width: 620px;
+      margin: 0 auto 36px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #2563EB, #14B8A6);
+      color: #FFFFFF;
+      padding: 18px 36px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      box-shadow: 0 16px 35px rgba(37, 99, 235, 0.22);
+      position: relative;
+      z-index: 2;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 45px rgba(37, 99, 235, 0.28);
+    }
+
+    .subtext {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #64748B;
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand {
+      margin-top: 40px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #0F172A;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 36px 24px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .download-btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="badge">FREE RESOURCE</div>
+
+    <h1>Workplace Communication Toolkit</h1>
+
+    <p>
+      Practical scripts, communication frameworks, and confidence boosters
+      to help working professionals speak clearly and communicate better at work.
+    </p>
+
+    <a
+      class="download-btn"
+      href="/downloads/workplace-communication-toolkit.pdf"
+      download
+    >
+      Download PDF
+    </a>
+
+    <div class="subtext">
+      Instant access • No signup required
+    </div>
+
+    <div class="brand">
+      © 2026 Valubre
+    </div>
+  </div>
+
+</body>
+</html>
